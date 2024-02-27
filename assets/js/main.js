@@ -17,14 +17,14 @@ function showPosts(posts) {
 
     posts.forEach(post => { // loop to create a new li and p element
         // to create titles
-        let title = document.createElement("li"); // declare type of tag to create in HTML
-        title.textContent = post.title; // add title to element
-        ul.appendChild(title); // add title to ul element
+        let li = document.createElement("li"); // declare type of tag to create in HTML
+        li.textContent = post.title; // add title to li element
+        ul.appendChild(li); // add title to ul element
 
         // to create body
-        let body = document.createElement("p"); // declare type of tag to create in HTML
-        body.textContent = post.body; // add body to element
-        ul.appendChild(body); // add body to ul element
+        let p = document.createElement("p"); // declare type of tag to create in HTML
+        p.textContent = post.body; // add body to p element
+        ul.appendChild(p); // add body to ul element
     });
     
     postData.innerHTML = ""; // clean container before adding new posts
